@@ -39,22 +39,48 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
+      /*-------Column-------*/
 
-      /*-------Row and Columns-------*/
-
-      body:Row(
+      body: Container(
+        color: Colors.black12,
+        width: 200,
+        height: 300,
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text("A"),
-            Text("B"),
-            Text("C"),
-            Text("D"),
-            TextButton(
+            const Text("A"),
+            const Text("B"),
+            const Text("C"),
+            const Text("D"),
+            ElevatedButton(
               onPressed: () {},
               child: const Text("Button"),
             ),
           ],
         ),
+      ),
+
+      /*-------Row-------*/
+
+      // body: Container(
+      //   color: Colors.black12,
+      //   height: 300,
+      //   child: Row(
+      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //     crossAxisAlignment: CrossAxisAlignment.center,
+      //     children: [
+      //       const Text("A"),
+      //       const Text("B"),
+      //       const Text("C"),
+      //       const Text("D"),
+      //       TextButton(
+      //         onPressed: () {},
+      //         child: const Text("Button"),
+      //       ),
+      //     ],
+      //   ),
+      // ),
 
       /*-------Insert Image-------*/
 

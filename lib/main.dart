@@ -31,6 +31,10 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+void displayName() {
+  print("Jeel Hello");
+}
+
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -39,27 +43,41 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      /*-------Column-------*/
+      /*-------InkWell Widget-------*/
 
-      body: Container(
-        color: Colors.black12,
-        width: 200,
-        height: 300,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const Text("A"),
-            const Text("B"),
-            const Text("C"),
-            const Text("D"),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text("Button"),
-            ),
-          ],
+      body: Center(
+        child: InkWell(
+          onTap: displayName,
+          onDoubleTap: displayName,
+          child: Container(
+            color: Colors.black12,
+            width: 300,
+            height: 300,
+          ),
         ),
       ),
+
+      /*-------Column-------*/
+
+      // body: Container(
+      //   color: Colors.black12,
+      //   width: 200,
+      //   height: 300,
+      //   child: Column(
+      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //     crossAxisAlignment: CrossAxisAlignment.center,
+      //     children: [
+      //       const Text("A"),
+      //       const Text("B"),
+      //       const Text("C"),
+      //       const Text("D"),
+      //       ElevatedButton(
+      //         onPressed: () {},
+      //         child: const Text("Button"),
+      //       ),
+      //     ],
+      //   ),
+      // ),
 
       /*-------Row-------*/
 

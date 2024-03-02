@@ -43,19 +43,81 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      /*-------InkWell Widget-------*/
+      /*-------Scroll View-------*/
 
-      body: Center(
-        child: InkWell(
-          onTap: displayName,
-          onDoubleTap: displayName,
-          child: Container(
-            color: Colors.black12,
-            width: 300,
-            height: 300,
+      body: Container(
+        width: double.maxFinite,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 200,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 200,
+                        height: 200,
+                        color: Colors.black12,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        color: Colors.deepPurpleAccent,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        color: Colors.lime,
+                      ),
+                      Container(
+                        width: 200,
+                        height: 200,
+                        color: Colors.greenAccent,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                height: 200,
+                color: Colors.amber,
+              ),
+              Container(
+                height: 200,
+                color: Colors.lightBlue,
+              ),
+              Container(
+                height: 200,
+                color: Colors.green,
+              ),
+              Container(
+                height: 200,
+                color: Colors.red,
+              ),
+              Container(
+                height: 200,
+                color: Colors.pink,
+              ),
+            ],
           ),
         ),
       ),
+
+      /*-------InkWell Widget-------*/
+
+      // body: Center(
+      //   child: InkWell(
+      //     onTap: displayName,
+      //     onDoubleTap: displayName,
+      //     child: Container(
+      //       color: Colors.black12,
+      //       width: 300,
+      //       height: 300,
+      //     ),
+      //   ),
+      // ),
 
       /*-------Column-------*/
 

@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/_10_List_View_StaticData.dart';
 import 'package:first_flutter_app/_1_Container.dart';
 import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
 import 'package:first_flutter_app/_3_Elevated_Button_Widget.dart';
@@ -36,7 +37,8 @@ class MyApp extends StatelessWidget {
       // home: const row(),
       // home: const column(),
       // home: const inkwell(),
-      home: const MyScrollView(),
+      // home: const MyScrollView(),
+      home: const ListViewStaticData(),
     );
   }
 }
@@ -159,67 +161,6 @@ class _MyHomePageState extends State<MyHomePage> {
       //   ],
       // ),
 
-      /*-------Scroll View-------*/
-
-      // body: Container(
-      //   width: double.maxFinite,
-      //   child: SingleChildScrollView(
-      //     child: Column(
-      //       children: [
-      //         Container(
-      //           height: 200,
-      //           child: SingleChildScrollView(
-      //             scrollDirection: Axis.horizontal,
-      //             child: Row(
-      //               children: [
-      //                 Container(
-      //                   width: 200,
-      //                   height: 200,
-      //                   color: Colors.black12,
-      //                 ),
-      //                 Container(
-      //                   width: 200,
-      //                   height: 200,
-      //                   color: Colors.deepPurpleAccent,
-      //                 ),
-      //                 Container(
-      //                   width: 200,
-      //                   height: 200,
-      //                   color: Colors.lime,
-      //                 ),
-      //                 Container(
-      //                   width: 200,
-      //                   height: 200,
-      //                   color: Colors.greenAccent,
-      //                 ),
-      //               ],
-      //             ),
-      //           ),
-      //         ),
-      //         Container(
-      //           height: 200,
-      //           color: Colors.amber,
-      //         ),
-      //         Container(
-      //           height: 200,
-      //           color: Colors.lightBlue,
-      //         ),
-      //         Container(
-      //           height: 200,
-      //           color: Colors.green,
-      //         ),
-      //         Container(
-      //           height: 200,
-      //           color: Colors.red,
-      //         ),
-      //         Container(
-      //           height: 200,
-      //           color: Colors.pink,
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
 
     );
   }

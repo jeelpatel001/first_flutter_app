@@ -1,3 +1,5 @@
+import 'package:first_flutter_app/_1_Container.dart';
+import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +19,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'First App'),
+
+      // home: const ContainerOrCenter(),
+      home: const TextButtonWidget(),
     );
   }
 }
@@ -45,18 +49,46 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      body: ListView.builder(
-        itemBuilder: (context, index) {
-          return Text(
-            names[index],
-            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 25),
-          );
-        },
-        itemCount: names.length,
+      /*-------Container Decoration-------*/
+
+      body: Center(
+        child: Container(
+          height: 300,
+          width: 300,
+          decoration: BoxDecoration(
+              color: Colors.blueGrey,
+              borderRadius: BorderRadius.circular(21),
+              border: Border.all(
+                  color: Colors.black,
+                  width: .5,
+                  style: BorderStyle.solid,
+                  strokeAlign: BorderSide.strokeAlignCenter),
+              boxShadow: const [
+                BoxShadow(
+                  color: Colors.blueGrey,
+                  // spreadRadius: 11,
+                  blurRadius: 20,
+                ),
+              ]),
+        ),
       ),
 
       /*-------List View and Its Components-------*/
+      /* Dynamic Data */
+
+      // body: ListView.builder(
+      //   itemBuilder: (context, index) {
+      //     return Text(
+      //       names[index],
+      //       style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 25),
+      //     );
+      //   },
+      //   itemCount: names.length,
+      // ),
+
+      /*-------List View and Its Components-------*/
       /* Static Data */
+
       // body: ListView(
       //   children: const [
       //     Padding(
@@ -253,59 +285,6 @@ class _MyHomePageState extends State<MyHomePage> {
       //   ),
       // ),
 
-      /*-------Elevated Button Widget-------*/
-
-      // body: Center(
-      //   child: ElevatedButton(
-      //     child: const Text("Elevated Button"),
-      //     onPressed: (){
-      //       print("Elevated Button Clicked");
-      //     },
-      //     onLongPress: (){
-      //       print("Elevated Button Long Clicked");
-      //     },
-      //   ),
-      // ),
-
-      /*-------Text Button Widget-------*/
-
-      // body: Center(
-      //   child: TextButton(
-      //     child: Text('Click me'),
-      //     onPressed: () {
-      //       print("Clicked");
-      //     },
-      //     onLongPress: (){
-      //       print("Long Clicked");
-      //     },
-      //   ),
-      // ),
-
-      /*-------Container or Center Widget-------*/
-      // body: Padding(
-      //   padding: const EdgeInsets.only(top: 8.0, right: 10, left: 10),
-      //   child: Container(
-      //     width: double.maxFinite,
-      //     height: 200,
-      //     decoration: const BoxDecoration(
-      //       color: Colors.lightBlueAccent,
-      //       borderRadius: BorderRadius.only(
-      //           topLeft: Radius.circular(15.0),
-      //           bottomRight: Radius.circular(15.0),
-      //           topRight: Radius.circular(15.0),
-      //           bottomLeft: Radius.circular(15.0)),
-      //     ),
-      //     child: const Center(
-      //       child: Text(
-      //         "Jeel Patel",
-      //         style: TextStyle(
-      //             fontSize: 30,
-      //             color: Colors.black,
-      //             fontWeight: FontWeight.w500),
-      //       ),
-      //     ),
-      //   ),
-      // ),
     );
   }
 }

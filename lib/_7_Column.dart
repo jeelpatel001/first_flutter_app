@@ -13,7 +13,7 @@ class column extends StatelessWidget {
         width: 300,
         color: Colors.greenAccent,
         child: Column(
-          
+
           // mainAxisAlignment: MainAxisAlignment.center,
           // mainAxisAlignment: MainAxisAlignment.end,
           // mainAxisAlignment: MainAxisAlignment.start, // Default

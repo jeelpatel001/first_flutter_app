@@ -5,6 +5,7 @@ import 'package:first_flutter_app/_4_Outlined_Button_Widget.dart';
 import 'package:first_flutter_app/_5_Insert_Image.dart';
 import 'package:first_flutter_app/_6_Row.dart';
 import 'package:first_flutter_app/_8_InkWell.dart';
+import 'package:first_flutter_app/_9_ScrollView.dart';
 import 'package:flutter/material.dart';
 
 import '_7_Column.dart';
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
       // home: const InsertImage(),
       // home: const row(),
       // home: const column(),
-      home: const inkwell(),
+      // home: const inkwell(),
+      home: const MyScrollView(),
     );
   }
 }
@@ -215,20 +217,6 @@ class _MyHomePageState extends State<MyHomePage> {
       //           color: Colors.pink,
       //         ),
       //       ],
-      //     ),
-      //   ),
-      // ),
-
-      /*-------InkWell Widget-------*/
-
-      // body: Center(
-      //   child: InkWell(
-      //     onTap: displayName,
-      //     onDoubleTap: displayName,
-      //     child: Container(
-      //       color: Colors.black12,
-      //       width: 300,
-      //       height: 300,
       //     ),
       //   ),
       // ),

@@ -6,6 +6,8 @@ import 'package:first_flutter_app/_5_Insert_Image.dart';
 import 'package:first_flutter_app/_6_Row.dart';
 import 'package:flutter/material.dart';
 
+import '_7_Column.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -29,7 +31,8 @@ class MyApp extends StatelessWidget {
       // home: const ElevatedButtonWidget(),
       // home: const OutlinedButtonWidget(),
       // home: const InsertImage(),
-      home: const row(),
+      // home: const row(),
+      home: const column(),
     );
   }
 }

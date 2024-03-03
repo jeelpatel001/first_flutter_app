@@ -38,72 +38,141 @@ void displayName() {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    var names = ['Jeel', 'Jay', 'Nihar', 'Krish', 'Babloo', 'Motu'];
+
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
 
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return Text(
+            names[index],
+            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 25),
+          );
+        },
+        itemCount: names.length,
+      ),
+
+      /*-------List View and Its Components-------*/
+      /* Static Data */
+      // body: ListView(
+      //   children: const [
+      //     Padding(
+      //       padding: EdgeInsets.all(8.0),
+      //       child: Text(
+      //         "One ",
+      //         style: TextStyle(
+      //           fontSize: 25,
+      //           fontWeight: FontWeight.w600,
+      //         ),
+      //       ),
+      //     ),
+      //     Padding(
+      //       padding: EdgeInsets.all(8.0),
+      //       child: Text(
+      //         "Two ",
+      //         style: TextStyle(
+      //           fontSize: 25,
+      //           fontWeight: FontWeight.w600,
+      //         ),
+      //       ),
+      //     ),
+      //     Padding(
+      //       padding: EdgeInsets.all(8.0),
+      //       child: Text(
+      //         "Three ",
+      //         style: TextStyle(
+      //           fontSize: 25,
+      //           fontWeight: FontWeight.w600,
+      //         ),
+      //       ),
+      //     ),
+      //     Padding(
+      //       padding: EdgeInsets.all(8.0),
+      //       child: Text(
+      //         "Four ",
+      //         style: TextStyle(
+      //           fontSize: 25,
+      //           fontWeight: FontWeight.w600,
+      //         ),
+      //       ),
+      //     ),
+      //     Padding(
+      //       padding: EdgeInsets.all(8.0),
+      //       child: Text(
+      //         "Five ",
+      //         style: TextStyle(
+      //           fontSize: 25,
+      //           fontWeight: FontWeight.w600,
+      //         ),
+      //       ),
+      //     ),
+      //   ],
+      // ),
+
       /*-------Scroll View-------*/
 
-      body: Container(
-        width: double.maxFinite,
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Container(
-                height: 200,
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 200,
-                        height: 200,
-                        color: Colors.black12,
-                      ),
-                      Container(
-                        width: 200,
-                        height: 200,
-                        color: Colors.deepPurpleAccent,
-                      ),
-                      Container(
-                        width: 200,
-                        height: 200,
-                        color: Colors.lime,
-                      ),
-                      Container(
-                        width: 200,
-                        height: 200,
-                        color: Colors.greenAccent,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                height: 200,
-                color: Colors.amber,
-              ),
-              Container(
-                height: 200,
-                color: Colors.lightBlue,
-              ),
-              Container(
-                height: 200,
-                color: Colors.green,
-              ),
-              Container(
-                height: 200,
-                color: Colors.red,
-              ),
-              Container(
-                height: 200,
-                color: Colors.pink,
-              ),
-            ],
-          ),
-        ),
-      ),
+      // body: Container(
+      //   width: double.maxFinite,
+      //   child: SingleChildScrollView(
+      //     child: Column(
+      //       children: [
+      //         Container(
+      //           height: 200,
+      //           child: SingleChildScrollView(
+      //             scrollDirection: Axis.horizontal,
+      //             child: Row(
+      //               children: [
+      //                 Container(
+      //                   width: 200,
+      //                   height: 200,
+      //                   color: Colors.black12,
+      //                 ),
+      //                 Container(
+      //                   width: 200,
+      //                   height: 200,
+      //                   color: Colors.deepPurpleAccent,
+      //                 ),
+      //                 Container(
+      //                   width: 200,
+      //                   height: 200,
+      //                   color: Colors.lime,
+      //                 ),
+      //                 Container(
+      //                   width: 200,
+      //                   height: 200,
+      //                   color: Colors.greenAccent,
+      //                 ),
+      //               ],
+      //             ),
+      //           ),
+      //         ),
+      //         Container(
+      //           height: 200,
+      //           color: Colors.amber,
+      //         ),
+      //         Container(
+      //           height: 200,
+      //           color: Colors.lightBlue,
+      //         ),
+      //         Container(
+      //           height: 200,
+      //           color: Colors.green,
+      //         ),
+      //         Container(
+      //           height: 200,
+      //           color: Colors.red,
+      //         ),
+      //         Container(
+      //           height: 200,
+      //           color: Colors.pink,
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
 
       /*-------InkWell Widget-------*/
 

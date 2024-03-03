@@ -3,6 +3,7 @@ import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
 import 'package:first_flutter_app/_3_Elevated_Button_Widget.dart';
 import 'package:first_flutter_app/_4_Outlined_Button_Widget.dart';
 import 'package:first_flutter_app/_5_Insert_Image.dart';
+import 'package:first_flutter_app/_6_Row.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       // home: const TextButtonWidget(),
       // home: const ElevatedButtonWidget(),
       // home: const OutlinedButtonWidget(),
-      home: const InsertImage(),
+      // home: const InsertImage(),
+      home: const row(),
     );
   }
 }
@@ -248,34 +250,7 @@ class _MyHomePageState extends State<MyHomePage> {
       //   ),
       // ),
 
-      /*-------Row-------*/
 
-      // body: Container(
-      //   color: Colors.black12,
-      //   height: 300,
-      //   child: Row(
-      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      //     crossAxisAlignment: CrossAxisAlignment.center,
-      //     children: [
-      //       const Text("A"),
-      //       const Text("B"),
-      //       const Text("C"),
-      //       const Text("D"),
-      //       TextButton(
-      //         onPressed: () {},
-      //         child: const Text("Button"),
-      //       ),
-      //     ],
-      //   ),
-      // ),
-
-      /*-------Insert Image-------*/
-
-      //
-      // body: Center(
-      //   child: Container(
-      //       width: 100, height: 100, child: Image.asset('assets/image/me.png')),
-      // ),
 
     );
   }

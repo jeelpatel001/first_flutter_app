@@ -1,4 +1,5 @@
 import 'package:first_flutter_app/_10_List_View_StaticData.dart';
+import 'package:first_flutter_app/_11_List_View_DynamicData.dart';
 import 'package:first_flutter_app/_1_Container.dart';
 import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
 import 'package:first_flutter_app/_3_Elevated_Button_Widget.dart';
@@ -38,7 +39,8 @@ class MyApp extends StatelessWidget {
       // home: const column(),
       // home: const inkwell(),
       // home: const MyScrollView(),
-      home: const ListViewStaticData(),
+      // home: const ListViewStaticData(),
+      home: const ListViewDynamicData(),
     );
   }
 }
@@ -102,65 +104,6 @@ class _MyHomePageState extends State<MyHomePage> {
       //   },
       //   itemCount: names.length,
       // ),
-
-      /*-------List View and Its Components-------*/
-      /* Static Data */
-
-      // body: ListView(
-      //   children: const [
-      //     Padding(
-      //       padding: EdgeInsets.all(8.0),
-      //       child: Text(
-      //         "One ",
-      //         style: TextStyle(
-      //           fontSize: 25,
-      //           fontWeight: FontWeight.w600,
-      //         ),
-      //       ),
-      //     ),
-      //     Padding(
-      //       padding: EdgeInsets.all(8.0),
-      //       child: Text(
-      //         "Two ",
-      //         style: TextStyle(
-      //           fontSize: 25,
-      //           fontWeight: FontWeight.w600,
-      //         ),
-      //       ),
-      //     ),
-      //     Padding(
-      //       padding: EdgeInsets.all(8.0),
-      //       child: Text(
-      //         "Three ",
-      //         style: TextStyle(
-      //           fontSize: 25,
-      //           fontWeight: FontWeight.w600,
-      //         ),
-      //       ),
-      //     ),
-      //     Padding(
-      //       padding: EdgeInsets.all(8.0),
-      //       child: Text(
-      //         "Four ",
-      //         style: TextStyle(
-      //           fontSize: 25,
-      //           fontWeight: FontWeight.w600,
-      //         ),
-      //       ),
-      //     ),
-      //     Padding(
-      //       padding: EdgeInsets.all(8.0),
-      //       child: Text(
-      //         "Five ",
-      //         style: TextStyle(
-      //           fontSize: 25,
-      //           fontWeight: FontWeight.w600,
-      //         ),
-      //       ),
-      //     ),
-      //   ],
-      // ),
-
 
     );
   }

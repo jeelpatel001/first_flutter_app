@@ -1,5 +1,7 @@
 import 'package:first_flutter_app/_1_Container.dart';
 import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
+import 'package:first_flutter_app/_3_Elevated_Button_Widget.dart';
+import 'package:first_flutter_app/_4_Outlined_Button_Widget.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +23,9 @@ class MyApp extends StatelessWidget {
       ),
 
       // home: const ContainerOrCenter(),
-      home: const TextButtonWidget(),
+      // home: const TextButtonWidget(),
+      // home: const ElevatedButtonWidget(),
+      home: const OutlinedButtonWidget(),
     );
   }
 }
@@ -269,20 +273,6 @@ class _MyHomePageState extends State<MyHomePage> {
       // body: Center(
       //   child: Container(
       //       width: 100, height: 100, child: Image.asset('assets/image/me.png')),
-      // ),
-
-      /*-------Outlined Button Widget-------*/
-
-      // body: Center(
-      //   child: OutlinedButton(
-      //     child: const Text("Elevated Button"),
-      //     onPressed: (){
-      //       print("Outlined Button Clicked");
-      //     },
-      //     onLongPress: (){
-      //       print("Outlined Button Long Clicked");
-      //     },
-      //   ),
       // ),
 
     );

@@ -1,5 +1,6 @@
 import 'package:first_flutter_app/_10_List_View_StaticData.dart';
 import 'package:first_flutter_app/_11_List_View_DynamicData.dart';
+import 'package:first_flutter_app/_12_Container_Decoration.dart';
 import 'package:first_flutter_app/_1_Container.dart';
 import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
 import 'package:first_flutter_app/_3_Elevated_Button_Widget.dart';
@@ -40,7 +41,8 @@ class MyApp extends StatelessWidget {
       // home: const inkwell(),
       // home: const MyScrollView(),
       // home: const ListViewStaticData(),
-      home: const ListViewDynamicData(),
+      // home: const ListViewDynamicData(),
+      home: const ContainerDecoration(),
     );
   }
 }
@@ -68,42 +70,6 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
 
-      /*-------Container Decoration-------*/
-
-      body: Center(
-        child: Container(
-          height: 300,
-          width: 300,
-          decoration: BoxDecoration(
-              color: Colors.blueGrey,
-              borderRadius: BorderRadius.circular(21),
-              border: Border.all(
-                  color: Colors.black,
-                  width: .5,
-                  style: BorderStyle.solid,
-                  strokeAlign: BorderSide.strokeAlignCenter),
-              boxShadow: const [
-                BoxShadow(
-                  color: Colors.blueGrey,
-                  // spreadRadius: 11,
-                  blurRadius: 20,
-                ),
-              ]),
-        ),
-      ),
-
-      /*-------List View and Its Components-------*/
-      /* Dynamic Data */
-
-      // body: ListView.builder(
-      //   itemBuilder: (context, index) {
-      //     return Text(
-      //       names[index],
-      //       style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 25),
-      //     );
-      //   },
-      //   itemCount: names.length,
-      // ),
 
     );
   }

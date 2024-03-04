@@ -1,6 +1,6 @@
-import 'package:first_flutter_app/_16_circle_avtar.dart';
-import 'package:first_flutter_app/_17_custom_fonts.dart';
 import 'package:flutter/material.dart';
+
+import 'color_schemes.g.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Jeel Patel',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
 
-      // home: const MyHomePage(title: "Home Page"),
+      theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
+      darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
+      home: const MyHomePage(title: "Home Page"),
 
       // home: const ContainerOrCenter(),
       // home: const TextButtonWidget(),
@@ -38,7 +36,8 @@ class MyApp extends StatelessWidget {
       // home: const MarginAndPadding(),
       // home: const MyListTile(),
       // home: const MyCircleAvtar(),
-      home: const MyCustomFonts(),
+      // home: const MyCustomFonts(),
+      // home: const MyCustomFonts(),
     );
   }
 }
@@ -58,6 +57,35 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Center(
+            child: Container(
+              decoration: const BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 60,
+                    color: Colors.red,
+                  )
+                ],
+              ),
+              child: const Text(
+                "Jeel Patel",
+                style: TextStyle(
+                    fontSize: 65,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'MyCustomFont'),
+              ),
+            ),
+          ),
+          Container(
+            height: 300,
+            child: Image.asset('assets/image/me.png'),
+          )
+        ],
       ),
     );
   }

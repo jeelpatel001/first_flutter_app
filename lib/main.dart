@@ -4,6 +4,7 @@ import 'package:first_flutter_app/_12_Container_Decoration.dart';
 import 'package:first_flutter_app/_13_Expanded_Widget.dart';
 import 'package:first_flutter_app/_14_Margin_Padding.dart';
 import 'package:first_flutter_app/_15_list_tile.dart';
+import 'package:first_flutter_app/_16_circle_avtar.dart';
 import 'package:first_flutter_app/_1_Container.dart';
 import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
 import 'package:first_flutter_app/_3_Elevated_Button_Widget.dart';
@@ -51,7 +52,8 @@ class MyApp extends StatelessWidget {
       // home: const ContainerDecoration(),
       // home: const ExpandedWidget(),
       // home: const MarginAndPadding(),
-      home: const MyListTile(),
+      // home: const MyListTile(),
+      home: const MyCircleAvtar(),
 
       
     );

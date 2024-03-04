@@ -2,6 +2,7 @@ import 'package:first_flutter_app/_10_List_View_StaticData.dart';
 import 'package:first_flutter_app/_11_List_View_DynamicData.dart';
 import 'package:first_flutter_app/_12_Container_Decoration.dart';
 import 'package:first_flutter_app/_13_Expanded_Widget.dart';
+import 'package:first_flutter_app/_14_Margin_Padding.dart';
 import 'package:first_flutter_app/_1_Container.dart';
 import 'package:first_flutter_app/_2_Text_Button_Widget.dart';
 import 'package:first_flutter_app/_3_Elevated_Button_Widget.dart';
@@ -47,7 +48,8 @@ class MyApp extends StatelessWidget {
       // home: const ListViewStaticData(),
       // home: const ListViewDynamicData(),
       // home: const ContainerDecoration(),
-      home: const ExpandedWidget(),
+      // home: const ExpandedWidget(),
+      home: const MarginAndPadding(),
 
       
     );

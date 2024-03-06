@@ -1,5 +1,7 @@
+import 'package:first_flutter_app/_19_card_widget.dart';
 import 'package:flutter/material.dart';
 
+import '_15_list_tile.dart';
 import 'color_schemes.g.dart';
 
 void main() {
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
 
       theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
       darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
-      home: const MyHomePage(title: "Home Page"),
+
+      // home: const MyHomePage(title: "Home Page"),
 
       // home: const ContainerOrCenter(),
       // home: const TextButtonWidget(),
@@ -37,7 +40,7 @@ class MyApp extends StatelessWidget {
       // home: const MyListTile(),
       // home: const MyCircleAvtar(),
       // home: const MyCustomFonts(),
-      // home: const MyCustomFonts(),
+      home: const MyCardWidget(),
     );
   }
 }
@@ -60,14 +63,30 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
-        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
+          Container(
+            width: 200,
+            height: 60,
+            margin: const EdgeInsets.only(bottom: 90),
+            child: ElevatedButton(
+              onPressed: () {},
+              child: const Text(
+                "Welcome",
+                style: TextStyle(fontSize: 22),
+              ),
+            ),
+          ),
+          const Text(
+            "My First Flutter App",
+            style: TextStyle(
+                fontWeight: FontWeight.bold, fontFamily: 'MyCustomFont'),
+          ),
           Center(
             child: Container(
               decoration: const BoxDecoration(
                 boxShadow: [
                   BoxShadow(
-                    blurRadius: 60,
+                    blurRadius: 80,
                     color: Colors.red,
                   )
                 ],
@@ -81,9 +100,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             height: 300,
-            child: Image.asset('assets/image/me.png'),
+            child: InkWell(
+                onTap: () {}, child: Image.asset('assets/image/me.png')),
           )
         ],
       ),

@@ -23,10 +23,6 @@ For any inquiries or assistance regarding this project, feel free to reach out t
 
 📧 Email: [jeel.official.24@gmail.com](mailto:jeel.official.24@gmail.com)
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.

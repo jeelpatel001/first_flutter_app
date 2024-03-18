@@ -1,5 +1,6 @@
 import 'package:first_flutter_app/_24_grid_view_layout.dart';
 import 'package:first_flutter_app/_25_callback_functions.dart';
+import 'package:first_flutter_app/_26_custom_widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'color_schemes.g.dart';
@@ -46,7 +47,8 @@ class MyApp extends StatelessWidget {
       // home: const MyDateAndTimeFormat(),
       // home: const MyDateAndTimePicker(),
       // home: const MyGridView(),
-      home: const MyCallBackFunctions(),
+      // home: const MyCallBackFunctions(),
+      home: const MyCustomWidget(),
     );
   }
 }

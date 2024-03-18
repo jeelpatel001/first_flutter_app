@@ -1,6 +1,7 @@
 import 'package:first_flutter_app/_19_card_widget.dart';
 import 'package:first_flutter_app/_20_text_input_widget.dart';
 import 'package:first_flutter_app/_21_get_date_and_time.dart';
+import 'package:first_flutter_app/_22_format_date_and_time.dart';
 import 'package:flutter/material.dart';
 
 import '_10_List_View_StaticData.dart';
@@ -57,7 +58,8 @@ class MyApp extends StatelessWidget {
       // home: const MyCustomFonts(),
       // home: const MyCardWidget(),
       // home: const MyTextField(),
-      home: const MyDateAndTime(),
+      // home: const MyDateAndTime(),
+      home: const MyDateAndTimeFormat(),
 
 
     );

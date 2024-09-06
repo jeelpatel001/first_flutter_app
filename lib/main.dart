@@ -1,9 +1,7 @@
-import 'package:first_flutter_app/_24_grid_view_layout.dart';
-import 'package:first_flutter_app/_25_callback_functions.dart';
-import 'package:first_flutter_app/_26_custom_widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'color_schemes.g.dart';
+import 'my_widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,37 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Jeel Patel',
       debugShowCheckedModeBanner: false,
-
       theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
       darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
-
-      // home: const MyHomePage(title: "Home Page"),
-
-      // home: const ContainerOrCenter(),
-      // home: const TextButtonWidget(),
-      // home: const ElevatedButtonWidget(),
-      // home: const OutlinedButtonWidget(),
-      // home: const InsertImage(),
-      // home: const row(),
-      // home: const column(),
-      // home: const inkwell(),
-      // home: const MyScrollView(),
-      // home: const ListViewStaticData(),
-      // home: const ListViewDynamicData(),
-      // home: const ContainerDecoration(),
-      // home: const ExpandedWidget(),
-      // home: const MarginAndPadding(),
-      // home: const MyListTile(),
-      // home: const MyCircleAvtar(),
-      // home: const MyCustomFonts(),
-      // home: const MyCardWidget(),
-      // home: const MyTextField(),
-      // home: const MyDateAndTime(),
-      // home: const MyDateAndTimeFormat(),
-      // home: const MyDateAndTimePicker(),
-      // home: const MyGridView(),
-      // home: const MyCallBackFunctions(),
-      home: const MyCustomWidget(),
+      home: const MyHomePage(title: "Home Page"),
     );
   }
 }
@@ -72,18 +42,20 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          //   Container(
-          //     width: 200,
-          //     height: 60,
-          //     margin: const EdgeInsets.only(bottom: 90),
-          //     child: ElevatedButton(
-          //       onPressed: () {},
-          //       child: const Text(
-          //         "Welcome",
-          //         style: TextStyle(fontSize: 22),
-          //       ),
-          //     ),
-          //   ),
+          Container(
+            height: 60,
+            margin: const EdgeInsets.only(bottom: 90),
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const MyWidgets()));
+              },
+              child: const Text(
+                "See All Designs",
+                style: TextStyle(fontSize: 22),
+              ),
+            ),
+          ),
           const Text(
             "My First Flutter App",
             style: TextStyle(

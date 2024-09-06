@@ -34,10 +34,8 @@ class _MyDateAndTimePickerState extends State<MyDateAndTimePicker> {
                   lastDate: DateTime(2025),
                 );
 
-                if (datePicked != null) {
-                  print(datePicked);
-                }
-              },
+                print(datePicked);
+                            },
               child: const Text("Show"),
             ),
             const Divider(
